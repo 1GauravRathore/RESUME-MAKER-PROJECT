@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>resume generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="back.js">
+</script>
+<link rel="stylesheet" href="weblook.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-2">resume generator</h1>
+<p class="text-center my-2">by gaurav rathore</p>
+
+<div class="row">
+ <!-- first column of row -->
+  <div class="col-md-6">
+<h1>Pesonal information</h1>
+
+<div class="form-group mt-2">
+<label for="namefield">Your name</label>
+<input type="text" id="namefield" placeholder="Enter here"
+class="form-control">
+</div>
+<div class="form-group mt-2">
+<label for="namefield">phone</label>
+<input type="text" id="namefield" placeholder="Enter here"
+class="form-control">
+</div>
+<div class="form-group mt-2">
+<label for="namefield">email</label>
+<input type="text" id="namefield" placeholder="Enter here"
+class="form-control">
+</div>
+<div class="form-group mt-2">
+<label for="namefield">Your age</label>
+<input type="date" id="namefield" placeholder="Enter here"
+class="form-control">
+</div>
+
+<div class="form-group mt-2 ">
+<label for="namefield">Your Address</label>
+<textarea class="form-control"  id="contactField"
+placeholder="Enter Address" rows="5 ">
+</textarea>
+</div>
+<br>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+ <label>Select photo File:</label>
+ <input type="file" name="image">
+ <input type="submit" name="submit" value="Upload">
+</form>
+<br>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+ <label>Select Signature File:</label>
+ <input type="file" name="image">
+ <input type="submit" name="submit" value="Upload">
+</form>
+<br>
+ <!-- important links -->
+ <br>
+ <p>important links</p>
+ <div class="form-group mt-2">
+ <label for="linkedfield">linked in</label>
+ <input type="text" id="linkedfield" placeholder="Enter here"
+ class="form-control">
+ </div>
+ <div class="form-group mt-2">
+ <label for="githubfield">Github</label>
+ <input type="text" id="githubfield" placeholder="Enter here"
+ class="form-control">
+ </div>
+ <div class="form-group mt-2">
+ <label for="instagramfield">instagram</label>
+ <input type="text" id="instagramfield" placeholder="Enter here"
+ class="form-control">
+ </div>
+  </div>
+  <!-- second colomn of row -->
+   <div class="col-md-6">
+<h1>professional skills</h1>
+
+
+<br>
+<div class="form-group mt-2">
+<label for="namefield">Acadmic qualification</label>
+<textarea class="form-control" id="contactField"
+placeholder="Enter Acadmic qualification" rows="4 ">
+</textarea>
+</div>
+<div class="form-group mt-2">
+<label for="namefield">Work Experience</label>
+<textarea class="form-control" id="contactField"
+placeholder="Enter Work Experience" rows="4 ">
+</textarea>
+</div>
+<br>
+<div class="form-group mt-2">
+<label for="namefield">Skills</label>
+<textarea class="form-control" id="contactField"
+placeholder="Enter Skills" rows="4 ">
+</textarea>
+</div>
+<br>
+<div class="form-group mt-2">
+<label for="namefield">Summary</label>
+<textarea class="form-control" id="contactField"
+placeholder="Enter Summary" rows="4 ">
+</textarea>
+</div>
+<br>
+<!-- <button type="button" id="myBtn" onclick="myFunction()">Generate CV</button> -->
+<a class="footer-link btn" href="file:///C:/Users/gaura/Documents/web%20development/html-mysite/cvWebsite.html">
+  Genrate CV</a>
+    </div>
+
+</div>
+<script>
+  $(document).ready(function() {
+      $('body').bind('cut copy', function(e) {
+          e.preventDefault();
+        });
+    });
+</script>
+  </div>
+  </body>
+</html>
